@@ -16,3 +16,16 @@ Thu 09 Mar 2023 04:08:02 PM UTC:
  tests:  3|4
 total_score: 30/70
 5d4ea4d
+Thu 09 Mar 2023 04:11:08 PM UTC: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:12: error: redefinition of ‘arrayTemporal’
+   87 |    Vector *arrayTemporal = (Vector*)malloc(n);
+      |            ^~~~~~~~~~~~~
+exercises.c:85:12: note: previous definition of ‘arrayTemporal’ was here
+   85 |    Vector *arrayTemporal = NULL;
+      |            ^~~~~~~~~~~~~
+Compilation failed
+80f2d54
