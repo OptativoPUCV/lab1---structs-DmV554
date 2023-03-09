@@ -82,7 +82,8 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   Vector *arrayTemporal = (Vector*)malloc(n);
+   Vector *arrayTemporal = NULL;
+   arrayTemporal = (Vector*)malloc(n);
 
    return arrayTemporal;
 }
