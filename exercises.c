@@ -89,6 +89,7 @@ Vector *crearVector(int n) {
    //arrayTmp -> datos = malloc(arrayTmp.capacidad * sizeof(int));
 
   // return arrayTmp -> datos;
+  return 1;
 }
 
 /*

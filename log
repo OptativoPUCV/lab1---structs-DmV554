@@ -317,3 +317,17 @@ exercises.c:92:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 89c7694
+Thu 09 Mar 2023 04:25:16 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:92:10: error: returning ‘int’ from a function with return type ‘Vector *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   92 |   return 1;
+      |          ^
+exercises.c:85:11: error: variable ‘arrayTmp’ set but not used [-Werror=unused-but-set-variable]
+   85 |    Vector arrayTmp;
+      |           ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a2905f4
