@@ -215,3 +215,26 @@ exercises.c:92:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 e94d343
+Thu 09 Mar 2023 04:22:40 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:16: error: expected identifier before ‘&’ token
+   87 |    arrayTmp -> &datos = NULL;
+      |                ^
+exercises.c:89:16: error: expected identifier before ‘&’ token
+   89 |    arrayTmp -> &datos = malloc(arrayTmp.capacidad * sizeof(int));
+      |                ^
+exercises.c:91:23: error: expected identifier before ‘&’ token
+   91 |    return arrayTmp -> &datos;
+      |                       ^
+exercises.c:85:11: error: variable ‘arrayTmp’ set but not used [-Werror=unused-but-set-variable]
+   85 |    Vector arrayTmp;
+      |           ^~~~~~~~
+exercises.c:92:1: error: control reaches end of non-void function [-Werror=return-type]
+   92 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+25905bf
