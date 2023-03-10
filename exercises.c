@@ -100,7 +100,7 @@ void asignarValor(Vector * v, int i, int valor) {
   
   while(1) {
     if(posicion == i) {
-      v->datos[posicion]; = valor;
+      v->datos[posicion] = valor;
       break;
     }
     posicion++;
