@@ -400,3 +400,17 @@ exercises.c:101:21: error: incompatible types when assigning to type ‘Vector�
       |                     ^~~~~
 Compilation failed
 4e6b27d
+Fri 10 Mar 2023 01:09:50 AM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:103:15: error: statement with no effect [-Werror=unused-value]
+  103 |       v->datos[posicion]; = valor;
+      |       ~~~~~~~~^~~~~~~~~~
+exercises.c:103:27: error: expected expression before ‘=’ token
+  103 |       v->datos[posicion]; = valor;
+      |                           ^
+cc1: all warnings being treated as errors
+Compilation failed
+cb8d31d
