@@ -350,3 +350,23 @@ exercises.c:92:10: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 d29ad90
+Fri 10 Mar 2023 12:18:05 AM UTC: 
+ exercises.c | 11 +++++------
+ 1 file changed, 5 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:13: error: invalid type argument of ‘->’ (have ‘Vector’)
+   87 |    arrayTmp -> datos = NULL;
+      |             ^~
+exercises.c:89:13: error: invalid type argument of ‘->’ (have ‘Vector’)
+   89 |    arrayTmp -> datos = malloc(arrayTmp.capacidad * sizeof(int));
+      |             ^~
+exercises.c:91:20: error: invalid type argument of ‘->’ (have ‘Vector’)
+   91 |    return arrayTmp -> datos;
+      |                    ^~
+exercises.c:92:1: error: control reaches end of non-void function [-Werror=return-type]
+   92 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+9dfcdd6
