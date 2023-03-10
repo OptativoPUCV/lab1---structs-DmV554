@@ -376,3 +376,17 @@ Fri 10 Mar 2023 12:20:47 AM UTC:
  tests:  4|3
 total_score: 40/70
 7a9fd72
+Fri 10 Mar 2023 01:05:56 AM UTC: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:99:9: error: ‘true’ undeclared (first use in this function)
+   99 |   while(true) {
+      |         ^~~~
+exercises.c:99:9: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:101:21: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  101 |       v[posicion] = valor;
+      |                     ^~~~~
+Compilation failed
+7bfe102
