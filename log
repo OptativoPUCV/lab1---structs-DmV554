@@ -476,3 +476,21 @@ Tue 14 Mar 2023 01:56:42 AM UTC:
  tests:  6|2
 total_score: 50/70
 1243f2f
+Tue 14 Mar 2023 02:08:02 AM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:116:17: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  116 |     c[i] = a[i] + b[i]
+      |            ~~~~ ^ ~~~~
+      |             |      |
+      |             Vector Vector
+exercises.c:116:23: error: expected ‘;’ before ‘}’ token
+  116 |     c[i] = a[i] + b[i]
+      |                       ^
+      |                       ;
+  117 |   }
+      |   ~                    
+Compilation failed
+f676f01
