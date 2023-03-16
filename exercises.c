@@ -28,7 +28,7 @@ void arrayMaxMin(int *a, int n, int *max, int *min) {
 int mayor=0, menor=a[0];
   
   
-  for(int i=0; i<10; i++) {
+  for(int i=0; i<n; i++) {
     if(a[i] > mayor) {
       mayor = a[i];
     }
