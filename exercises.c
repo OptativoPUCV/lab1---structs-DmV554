@@ -85,6 +85,7 @@ Vector *crearVector(int n) {
    Vector *arrayTmp = malloc(sizeof(Vector));
    arrayTmp->capacidad = n;
    arrayTmp->datos = malloc(n * sizeof(int));
+   if(arrayTmp == NULL) exit(EXIT_FAILURE);
    return arrayTmp;
 }
 
