@@ -571,3 +571,9 @@ Thu 16 Mar 2023 03:58:08 PM UTC:
  tests:  3|0
    [ INFO ] v=crearVector(7)
 cd1ed95
+Thu 16 Mar 2023 03:59:34 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|0
+total_score: 70/70
+8ef2273

@@ -83,7 +83,7 @@ typedef struct {
 
 Vector *crearVector(int n) {
    Vector *arrayTmp = malloc(sizeof(Vector));
-   if(arrayTmp->datos == NULL) exit(EXIT_FAILURE);
+   if(arrayTmp == NULL) exit(EXIT_FAILURE);
   
    arrayTmp->capacidad = n;
   
