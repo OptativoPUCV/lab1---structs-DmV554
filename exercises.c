@@ -83,12 +83,14 @@ typedef struct {
 
 Vector *crearVector(int n) {
    Vector *arrayTmp = malloc(sizeof(Vector));
+  
    if(arrayTmp == NULL) exit(EXIT_FAILURE);
   
    arrayTmp->capacidad = n;
+ arrayTmp->datos=calloc(n,sizeof(int);
   
-   arrayTmp->datos = malloc(n * sizeof(int));
    if(arrayTmp->datos == NULL) exit(EXIT_FAILURE);
+  
    return arrayTmp;
 }
 

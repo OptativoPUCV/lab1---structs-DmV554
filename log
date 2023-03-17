@@ -577,3 +577,24 @@ Thu 16 Mar 2023 03:59:34 PM UTC:
  tests:  8|0
 total_score: 70/70
 8ef2273
+Fri 17 Mar 2023 12:52:15 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:90:38: error: expected ‘)’ before ‘;’ token
+   90 |  arrayTmp->datos=calloc(n,sizeof(int);
+      |                                      ^
+      |                                      )
+exercises.c:94:20: error: expected ‘;’ before ‘}’ token
+   94 |    return arrayTmp;
+      |                    ^
+      |                    ;
+   95 | }
+      | ~                   
+exercises.c:95:1: error: control reaches end of non-void function [-Werror=return-type]
+   95 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+8225365
