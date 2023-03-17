@@ -87,9 +87,10 @@ Vector *crearVector(int n) {
    if(arrayTmp == NULL) exit(EXIT_FAILURE);
   
    arrayTmp->capacidad = n;
+  
  arrayTmp->datos=calloc(n,sizeof(int));
   
-   if(arrayTmp->datos == NULL) ;exit(EXIT_FAILURE);
+   if(arrayTmp->datos == NULL)exit(EXIT_FAILURE);
   
    return arrayTmp;
 }
