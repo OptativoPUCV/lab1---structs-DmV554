@@ -141,7 +141,7 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   asignarValor(b, 1, b2);
 
   for(int i=0; i<c->capacidad; i++) {
-    c->datos[i] = a->datos[i] + b->datos[i];
+    c->datos[i] = obtenerValor(a, i) + obtenerValor(b, i);
   }
   
 }
